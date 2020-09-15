@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cool beans</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 40px;
+            margin-top: calc(50vh - 20px);
+            color: #fff;
+            text-shadow: 2px 2px #ddd
+        }
+    </style>
+</head>
+<body>
+    
+<h1>Cool Beans</h1>
+
+<script>
+    
+
+    var ua = navigator.userAgent.toLowerCase();
+var isAndroid = ua.indexOf("android") > -1; 
+var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+if(isAndroid) {
+  window.location = 'https://calderaspas.com';
+}
+
+
+if (isIOS) {
+    window.location = 'https://hotspring.com';
+} 
+
+</script>
+</body>
+</html>
