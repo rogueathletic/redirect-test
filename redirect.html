@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cool beans</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-family: sans-serif;
+            margin-top: 45vh;
+            padding: 0 15px 0 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+
+        var isPc = /Win64/.test(navigator.userAgent) && !window.MSStream;
+        var isMac = /Macintosh/.test(navigator.userAgent) && !window.MSStream;
+        var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+        var isAndroid = /Android/.test(navigator.userAgent) && !window.MSStream;
+
+        if (isAndroid) {
+            window.location.href = './onanandroid.html';
+        }
+        if (isIOS) {
+            window.location.href = './onanapple.html';
+        }
+
+        if (isPc) {
+            window.location.href = './onanapple.html';
+        }
+
+        if (isMac) {
+            window.location.href = './onamac.html';
+        }
+    </script>
+
+    <script defer>
+        var bod = document.querySelector('body');
+        var newElem = "<h1>You have reached the main app default page</h1>";
+        bod.innerHTML = newElem;
+    </script>
+</body>
+
+</html>
+
+
+
+
+<script>
+
+</script>

@@ -5,99 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cool beans</title>
     <style>
-  :root {
-  --orange: #f25022;
-  --green: #7fba00;
-  --yellow: #ffb900;
-  --blue: #00a4ef;
-}
-
-
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  margin: 0;
-  background-color: white;
-}
-
-.microsoft {
-  width: 310px;
-  height: 310px;
-}
-
-.microsoft::before {
-  content: '';
-  display: block;
-  width: 150px;
-  height: 150px;
-  background-color: var(--orange);
-  animation: loop 5s ease-in-out forwards;
-}
-
-.microsoft::After {
-    position: relative;
-    top: 160px;
-    content: "Microsoft";
-    letter-spacing: 5px;
-    font-size: 65px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    animation: showTitle 5s ease-in-out forwards;
-}
-
-@keyframes showTitle{
-    0% {
-        color: #73737300
-    }
-
-    100% {
-        color:#737373
-    }
-}
-
-@keyframes loop {
-  0% {
-    box-shadow: 
-      0 0 0 var(--green),
-      0 0 0 var(--yellow),
-      0 0 0 var(--blue);
-  }
-  20% {
-    box-shadow:
-      160px 0 0 var(--green),
-      160px 0 0 var(--yellow),
-      160px 0 0 var(--blue);
-  }
-  40% {
-    box-shadow:
-      160px 0 0 var(--green),
-      160px 160px 0 var(--yellow),
-      160px 160px 0 var(--blue);
-  }
-  60% {
-    box-shadow: 
-      160px 0 0 var(--green),
-      160px 160px 0 var(--yellow),
-      0 160px 0 var(--blue);
-  }
-  100% {
-    box-shadow: 
-      160px 0 0 var(--green),
-      160px 160px 0 var(--yellow),
-      0 160px 0 var(--blue);
-  }
-
-}
+h1{text-align:center;font-family:sans-serif;margin-top:45vh;padding:0 15px 0 15px}p{text-align:left;max-width:80vw;width:400px;margin:auto;font-family:sans-serif}button{margin:45px -130px 0;width:260px;padding:10px 0 10px 0;border-radius:50px;position:relative;left:50%}
     </style>
 </head>
 <body>
-    
-    <div class="microsoft"></div>
-
-<script>
-
+<script >
+    var bod = document.querySelector('body');
+    var newElem = '<h1>You are on a Windows Device</h1><p>At this point you will have been redirected to the Android App Store to download the app.</p><a href="./redirect.html"><button>Return to initial link</button></a>';
+    bod.innerHTML = newElem;
 </script>
 </body>
 </html>
+
