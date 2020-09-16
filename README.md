@@ -1,2 +1,1 @@
-# redirect-test
-redirect-test
+[what device type am I on?](https://rogueathletic.github.io/redirect-test/)
