@@ -18,8 +18,38 @@
         p.footer {
             position: fixed;
             bottom: 15px;
-            width: 100%
+            left: 0;
+            right: 0;
+            width: 100%;
+            line-height: 30px;
+            }
+            
+            p.footer > a  {
+                color: #fff;
+                font-weight: 300;
+                background-color: #333;
+                border: 2px solid #000;
+                padding: 10px 20px 10px 20px;
+                border-radius: 75px;
         }
+        p.footer > a:first-of-type {
+            padding: 10px 40px;
+        }
+
+        p.footer a:hover {
+            filter: brightness(2);
+        }
+
+@media (max-width: 400px) {
+    p.footer {
+        line-height: 25px;
+        bottom: 5px;
+    }
+    
+    p.footer > a {
+            font-size: 14px;
+        }
+}
 
         .qrcode-img {
             max-width: 700px;
@@ -28,7 +58,10 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+        }
 
+        a {
+            text-decoration: none
         }
     </style>
 </head>
@@ -42,7 +75,10 @@
     </a>
     <p class="footer footer-link" style="text-align: center;">
         <a
-            href="https://rogueathletic.github.io/redirect-test/redirect.html">Click to run code</a>
+            href="https://rogueathletic.github.io/redirect-test/redirect.html">Click to run redirect action</a><br>&nbsp;<br>
+            <a href="./qr-code-for-redirect.pdf" download="qr-code">Click to download QR-Code.pdf</a>
+            <br>&nbsp;<br>
+            <a href="./qr-code-for-redirect.svg" download="qr-code" title="click to download SVG of QR Code">Click to download QR-Code.svg</a>
     </p>
 </body>
 
