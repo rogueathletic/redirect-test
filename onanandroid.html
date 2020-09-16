@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cool beans</title>
+    <style>
+        .android{
+  position:relative;
+  width:200px;
+  height:290px;
+  margin:80px auto;
+  background: #A5C63B;
+  background: linear-gradient(#A5C63B 32%, transparent 32%, transparent 35%, #A5C63B 35%);
+  border-radius:200px 200px 50px 50px;
+  transition: all .25s ease-out;
+  animation: animaAndroid 5s 1;
+}
+@keyframes animaAndroid {
+0%  	{ transform: rotate(0deg); left:0px; }
+25%		{ transform: rotate(20deg); left:0px; }
+50%		{ transform: rotate(0deg); left:500px; }
+55%		{ transform: rotate(0deg); left:500px; }
+70%		{ transform: rotate(0deg); left:500px; }
+100%	{ transform: rotate(-360deg); left:0px; }
+}
+.android:hover{
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  transform: scale(1.2) rotate(3deg);
+}
+.android:before{
+  content: "";
+  background: #98bf3d;
+  width: 44px;
+  height: 150px;
+  position: absolute;
+  top: 96px;
+  left: -52px; 
+  border-radius: 44px;
+  box-shadow: 
+    260px 0 0 #A5C63B,
+    93px 115px 0 #A5C63B,
+    167px 115px 0 #A5C63B;
+}
+.android span{
+  content:'';
+  position:absolute;
+  display:block;
+  width:18px;
+  height:18px;
+  top:35px;
+  left:50px;
+  background: #fff;
+  border-radius:18px;
+  box-shadow:78px 0 0 #fff;
+}
+.android span:after,
+.android span:before{
+  content:'';
+  position:absolute;
+  display:block;
+  width:6px;
+  height:40px;
+  top:-60px;
+  left:0px;
+  background: #A5C63B;
+  border-radius:5px;
+  transform:rotate(-25deg);
+}
+.android span:after{
+  left:85px;
+  transform:rotate(25deg);
+}
+
+    </style>
+</head>
+<body>
+    <div class="android"><span></span></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+</body>
+</html>

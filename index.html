@@ -19,22 +19,23 @@
     
 <h1>Cool Beans</h1>
 
-<script>
+ <script>
     
 
     var ua = navigator.userAgent.toLowerCase();
 var isAndroid = ua.indexOf("android") > -1; 
-var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+var isIOS = /|iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+var isMac = /Mac/.test(navigator.userAgent) && !window.MSStream;
 
 if(isAndroid) {
-  window.location = 'https://calderaspas.com';
+  window.location = 'https://rogueathletic.github.io/redirect-test/onanandroid.html';
+} else if (isIOS) {
+    window.location = 'https://rogueathletic.github.io/redirect-test/';
+} else if (isMac) {
+    window.location = 'https://rogueathletic.github.io/redirect-test//onamac.html';
+} else {
+    window.location = 'https://rogueathletic.github.io/redirect-test//onapc.html';
 }
-
-
-if (isIOS) {
-    window.location = 'https://hotspring.com';
-} 
-
 </script>
 </body>
 </html>
